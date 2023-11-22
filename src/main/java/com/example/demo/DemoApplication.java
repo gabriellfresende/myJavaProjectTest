@@ -12,6 +12,8 @@ public class DemoApplication {
 //test
 	@GetMapping("/")
 	public String home() {
+		String userId = 1; 
+		String sqlQuery = "select * from tbluser where userId = " + userId;
 		return "Spring is here!";
 	}
 
